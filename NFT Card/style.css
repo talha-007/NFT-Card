@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+:root{
+    --primary-color: #8bacda;
+    --secondary-color: #00fff7;
+    --bg-color:#0d192b;
+    --bg-card-color: #14253d;
+    --card-line:#2f415b;
+    --white-color: #ffffff;
+
+}
+body{
+    background-color: var(--bg-color);
+    color: var(--white-color);
+    width: 100%;
+   
+   
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card{
+    width: 22rem;
+    height: 37rem;
+    background: var(--bg-card-color);
+    border-radius: 1rem;
+    padding: 1.3rem 1.3rem;
+    position: relative;
+   
+}
+.card__image .equi{
+    width: 100%;
+    border-radius: .55rem;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 19.4rem;
+    height: 19.4rem;
+    margin: 1.3rem 1.3rem;
+    border-radius: 0.55rem;
+    background: #00ffff54;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+.overlay:hover{
+    display: flex;
+    cursor: pointer;
+    opacity: 100%;
+}
+
+.card__title{
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 1rem 0rem
+}
+.card__title:hover{
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+.card__text{
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--primary-color);
+    margin: 1rem 0rem
+}
+.eth{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem 0rem
+}
+.eth .ethe{
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+.eth div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .55rem;
+}
+.content::after{
+    content: '';
+    width: 19.4rem;
+    height: 1px;
+    background-color: var(--card-line);
+    position: absolute;
+    top:86%
+}
+.cre_by{
+    display:flex;
+    margin-top: 3rem;
+    gap: 1rem;
+    color: var(--primary-color);
+}
+.cre_by img{
+    width:10%;
+    border: 1px solid var(--white-color);
+    border-radius: 50%;
+}
+.cre_by h3{
+    font-weight: 300;
+}
+.cre_by h3 span{
+    color: var(--white-color);
+}
+.cre_by h3 span:hover{
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.attribution{
+    top: 96%;
+    position: absolute;
+    left: 40%;
+}
+
+@media screen and (max-width: 375px){
+    .attribution{
+        top: 96%;
+        position: absolute;
+        left: 10%;
+    }
+}
